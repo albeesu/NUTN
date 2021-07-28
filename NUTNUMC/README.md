@@ -1,1 +1,1 @@
-#NUTNUMC小遊戲
+NUTNUMC小遊戲
