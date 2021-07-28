@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<title>NUTNUMC大地闖關寶箱</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('img/treasure.png');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;   
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+
+}
+
+.button:hover {background-color: #3e8e41}
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-small">
+    <h1 class="w3-jumbo w3-animate-top"><center><br>寶藏密碼有7個數字<br>請依序輸入至以下框框中<center></h1>
+	
+    <hr class="w3-border-grey" style="margin:auto;width:40%"><br><br>
+    <center>
+	<input id="input1" type="text"  style="font-size:30px"><br><br>
+	<button onclick="keyvalue()" style="width:120px;height:60px;font-size:40px; background-color: #ffd700;">提交</button>
+	<h1><output id="out1"></output>
+	<br><output id="out2"></output>
+	<br><output id="out3"></output>
+	</center>
+	<script>
+		temp=1;
+		function keyvalue(){
+			var kvalue=(document.getElementById('input1').value);
+			if(kvalue==4536127){
+				document.getElementById("out1").value = "恭喜你答對啦!" ;
+			}
+			else{
+				document.getElementById("out1").value = "不是喔!請再想想看!" ;
+				temp=temp+1;
+			}
+			if(temp>3){
+				document.getElementById("out2").value = "(提示1:跟班級有關)" ;
+			}
+			if(temp>10){
+				document.getElementById("out3").value = "(提示2:今日闖關順序)" ;
+			}
+		}  
+	</script>
+  </div>
+</div>
+
+</body>
+</html>
