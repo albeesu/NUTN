@@ -9,7 +9,7 @@ body,h1 {font-family: "Raleway", sans-serif}
 body, html {height: 60%}
 .bgimg {
   background-color:#000000;
-  background-image: url('img/treasure.png');
+  background-image: url('img/gems.png');
   min-height: 100%;
   background-position: center;
   background-size: cover;
@@ -39,36 +39,16 @@ body, html {height: 60%}
 <body>
 <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
   <div class="w3-display-small">
-    <h1 class="w3-jumbo w3-animate-top"><center><br>恭喜大家完成藏寶箱的開啟<br>獲得了紅寶石一顆<center></h1>
+    <h1 class="w3-jumbo w3-animate-top"><center><br>恭喜大家完成了藏寶箱的開啟<br>獲得了紅寶石一顆<center></h1>
 	
-    <hr class="w3-border-grey" style="margin:auto;width:40%"><br><br>
+    <hr class="w3-border-grey" style="margin:auto;width:40% "><br><br>
     <center>
-	<input id="input1" type="text"  style="font-size:30px"><br><br>
-	<button onclick="keyvalue()" style="width:120px;height:60px;font-size:40px; background-color: #ffd700;">提交</button>
+	<input id="input1" type="text"  style=" display:none;font-size:90px" ><br><br>
+
 	<h1><output id="out1"></output>
 	<br><output id="out2"></output>
 	<br><output id="out3"></output>
 	</center>
-	<script>
-		temp=1;
-		function keyvalue(){
-			var kvalue=(document.getElementById('input1').value);
-			if(kvalue==4536127){
-				document.getElementById("out1").value = "恭喜你答對啦!" ;
-				window.location.href="te2.html";
-			}
-			else{
-				document.getElementById("out1").value = "不是喔!請再想想看!" ;
-				temp=temp+1;
-			}
-			if(temp>3){
-				document.getElementById("out2").value = "(提示1:跟班級有關)" ;
-			}
-			if(temp>10){
-				document.getElementById("out3").value = "(提示2:今日闖關順序)" ;
-			}
-		}  
-	</script>
   </div>
 </div>
 </body>
