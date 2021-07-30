@@ -4,5 +4,5 @@
 在此利用PSO方法來更新NN參數，
 訓練資料為(0,0,0),(1,0,1),(0,1,1),(1,1,0)，
 以下為介面呈現方式，
-![image](https://github.com/albeesu/NUTN/edit/main/PSOtoNN/blob/main/image/psointerface.PNG)
-![image](https://github.com/albeesu/NUTN/edit/main/PSOtoNN/blob/main/image/psointerface2.PNG)
+![image](https://github.com/albeesu/NUTN/edit/main/PSOtoNN/image/psointerface.PNG)
+![image](https://github.com/albeesu/NUTN/edit/main/PSOtoNN/image/psointerface2.PNG)
